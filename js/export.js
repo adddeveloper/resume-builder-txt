@@ -51,7 +51,6 @@ function downloadTxtFile() {
             certification_content += certification_holder.children[i].children[0].children[1].value + "\n";
         }
         certification_content += "\n";
-        certification_content += "\n";
     }
 
     for (let i = 0; i < reference_holder.children.length; i++) {
