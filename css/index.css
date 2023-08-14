@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.d-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+
+textarea{
+    width: 18rem;
+    height: 10rem;
+    resize: none;
+}
+.objective-add{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-holder{
+    display: flex;
+    flex-direction: column;
+}
+.mx-2{
+    margin: 0 .5rem 0 0 ;
+}
+.job{
+    background-color: #3333;
+    padding: 1rem;
+}
+.job input{
+    background-color: white;
+}
+.px-0{
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 2em;
+}

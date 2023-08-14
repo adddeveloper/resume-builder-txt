@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Home || EliteResumeForge || Resume Builder TXT </title>
+    <!-- paper css -->
+    <link rel="stylesheet" href="css/paper.min.css">
+    <!-- bootstrap icons -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> -->
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="margin">
+        <div class="paper">
+            <h1>Elite Resume Forge <span style="
+                font-size: 1rem;
+                display: block;
+            ">(resume builder)</span></h1>
+            <p>
+                Looking to land your dream job? Crafting the perfect resume just got easier with Elite Resume Forge, the ultimate automated resume builder. Say goodbye to hours of formatting struggles and writer's block – Elite Resume Forge streamlines the resume creation process, helping you present your skills and experiences in a professional and polished manner.
+            </p>
+            <br>
+            <h3>Input Info</h3>
+            <br>
+            <h4>Name</h4>
+            <div class="d-flex">
+                <input type="text" id="firstname" placeholder="First Name">
+                <input type="text"  id="lastname" placeholder="Last Name">
+            </div>
+            <br>
+            <h4>Contact</h4>
+            <div class="d-flex flex-column">
+                <div class="flex-row d-flex">
+                    <input type="text" id="phonenumber" placeholder="Phone Number">
+                    <input type="text" id="email" placeholder="Email">
+                </div>
+                <div class="d-flex">
+                    <input type="text" id="website" placeholder="Website (optional)">
+                </div>
+            </div>
+            <br>
+            <h4>Address</h4>
+            <div class="d-flex flex-column">
+                <div class="flex-row d-flex">
+                    <input type="text" id="street" placeholder="Street / Mailing Address">
+                    <input type="text" id="city" placeholder="City">
+                </div>
+                <div class="d-flex">
+                    <input type="text" id="country" placeholder="Country / Province">
+                    <input type="text" id="postalcode" placeholder="Postal Code">
+                </div>
+            </div>
+            <br>
+            <h4>Objective</h4>
+            <div class="d-flex">
+                <div id="objective-text-holder" class="text-holder">
+                    <textarea placeholder="In a concise summary, define your identity, your strengths, and specify the desired job role."></textarea>
+                </div>
+                <div class="objective-add">
+                    <button id="objective-add-btn">+</button>
+                </div>
+            </div>
+            <br>
+            <h4>Education</h4>
+            <div class="d-flex">
+                <div id="education-text-holder" class="text-holder">
+                    <div class="job border">
+                        <div class="d-flex">
+                            <input type="text" placeholder="School Name">
+                            <input type="text" placeholder="Degree / Diploma"> 
+                        </div>
+                        <div class="d-flex">
+                            <input type="date" placeholder="Start Date">
+                            <input type="date" placeholder="End Date"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="education-add">
+                    <button id="education-add-btn">+</button>
+                </div>
+            </div>
+            <br>
+            <h4>Work Experience</h4>
+            <div class="d-flex">
+                <div id="experience-text-holder" class="mx-2 text-holder">
+                    <div class="job border">
+                        <div class="d-flex">
+                            <input type="text" placeholder="Job Title">
+                            <input type="text" placeholder="Company Name"> 
+                        </div>
+                        <div class="d-flex">
+                            <input type="date" placeholder="Start Date">
+                            <input type="date" placeholder="End Date"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-add">
+                    <button id="experience-add-btn">+</button>
+                </div>
+            </div>
+            <br>
+            <h4>Skills and Abilities</h4>
+            <div class="d-flex">
+                <div id="skills-text-holder" class="mx-2 text-holder">
+                    <div class="job border">
+                        <div class="d-flex">
+                            <input type="text" placeholder="Your skills or abilities">
+                            <input type="text" placeholder="Description"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-add">
+                    <button id="skills-add-btn">+</button>
+                </div>
+            </div>
+            <br>
+            <h4>Certifications</h4>
+            <div class="d-flex">
+                <div id="certification-text-holder" class="mx-2 text-holder">
+                    <div class="job border">
+                        <div class="d-flex">
+                            <input type="text" placeholder="Name of Certification">
+                            <input type="date" placeholder="Earned Date"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="certification-add">
+                    <button id="certification-add-btn">+</button>
+                </div>
+            </div>
+            <br>
+            <h4>Reference</h4>
+            <div class="d-flex">
+                <div id="reference-text-holder" class="mx-2 text-holder">
+                    <div class="job border">
+                        <div class="d-flex">
+                            <input type="text" placeholder="Reference Name">
+                            <input type="text" placeholder="Job Title, Company Name"> 
+                        </div>
+                        <div class="d-flex">
+                            <input type="text" placeholder="Contact Phone Number">
+                            <input type="text" placeholder="Contact Email Address"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-add">
+                    <button id="reference-add-btn">+</button>
+                </div>
+            </div>
+            <br>
+            <button class="px-0 btn-success">Export!</button>
+        </div>
+    </div>
+
+    <div class="paper-btn margin" style="user-select: none;position: fixed;bottom: 0;right: 0;" onclick="function clikc(){
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }clikc();">^</div>
+    <script src="js/index.js"></script>
+    <script src="js/export.js"></script>
+</body>
+</html>
